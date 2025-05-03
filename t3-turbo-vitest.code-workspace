@@ -1,0 +1,97 @@
+
+{
+    "folders": [
+      {
+        "path": ".",
+        "name": "root",
+      },
+      {
+        "path": "apps/nextjs",
+      },
+      {
+        "path": "apps/expo",
+      },
+      {
+        "path": "packages/api",
+      },
+      {
+        "path": "packages/auth",
+      },
+      {
+        "path": "packages/db",
+      },
+      {
+        "path": "packages/ui",
+      },
+      {
+        "path": "packages/validators",
+      },
+      {
+        "path": "tooling/eslint",
+      },
+      {
+        "path": "tooling/github",
+      },
+      {
+        "path": "tooling/prettier",
+      },
+      {
+        "path": "tooling/tailwind",
+      },
+      {
+        "path": "tooling/typescript",
+      },
+    ],
+    "settings": {
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.organizeImports": "explicit",
+      },
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true,
+      "eslint.rules.customizations": [{ "rule": "*", "severity": "warn" }],
+      "eslint.workingDirectories": [
+        { "pattern": "apps/*/" },
+        { "pattern": "packages/*/" },
+        { "pattern": "tooling/*/" },
+      ],
+      "files.eol": "\n",
+      "editor.quickSuggestions": {
+        "strings": "on",
+      },
+      "tailwindCSS.experimental.classRegex": [
+        ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+        ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+      ],
+      "tailwindCSS.experimental.configFile": "./tooling/tailwind/index.ts",
+      "typescript.enablePromptUseWorkspaceTsdk": true,
+      "typescript.preferences.autoImportFileExcludePatterns": [
+        "next/router.d.ts",
+        "next/dist/client/router.d.ts",
+      ],
+      "typescript.tsdk": "node_modules/typescript/lib",
+    },
+    "launch": {
+      "version": "0.2.0",
+      "configurations": [
+        {
+          "name": "Next.js",
+          "type": "node-terminal",
+          "request": "launch",
+          "command": "pnpm dev",
+          "cwd": "${workspaceFolder}/apps/nextjs/",
+          "skipFiles": ["<node_internals>/**"],
+        },
+      ],
+    },
+    "extensions": {
+      "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "yoavbls.pretty-ts-errors",
+        "bradlc.vscode-tailwindcss",
+        "dsznajder.es7-react-js-snippets",
+      ],
+    },
+  }
+  
