@@ -27,7 +27,11 @@
     "push": "pnpm with-env drizzle-kit push",
     "studio": "pnpm with-env drizzle-kit studio",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false",
-    "with-env": "dotenv -e ../../.env --"
+    "with-env": "dotenv -e ../../.env --",
+    "docker:start": "cd docker && docker compose up -d",
+    "docker:stop": "cd docker && docker compose stop",
+    "docker:down": "cd docker && docker compose down -v",
+    "docker:restart": "cd docker && docker compose restart"
   },
   "dependencies": {
     "@vercel/postgres": "^0.10.0",
