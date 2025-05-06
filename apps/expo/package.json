@@ -10,6 +10,8 @@
     "dev:ios": "expo start --ios",
     "android": "expo run:android",
     "ios": "expo run:ios",
+    "build:local:android": "dotenv -- eas build --platform android --profile development --local",
+    "build:local:ios": "dotenv -- eas build --platform ios --profile development --local",
     "format": "prettier --check . --ignore-path ../../.gitignore --ignore-path .prettierignore",
     "lint": "eslint",
     "typecheck": "tsc --noEmit"
