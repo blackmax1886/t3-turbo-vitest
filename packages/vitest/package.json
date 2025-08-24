@@ -1,0 +1,55 @@
+{
+    "name": "@acme/vitest",
+    "private": true,
+    "version": "0.1.0",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./src/index.ts",
+            "default": "./src/index.ts"
+        },
+        "./base": {
+            "types": "./dist/base.d.ts",
+            "import": "./src/base.ts",
+            "default": "./src/base.ts"
+        },
+        "./react": {
+            "types": "./dist/react.d.ts",
+            "import": "./src/react.ts",
+            "default": "./src/react.ts"
+        },
+        "./node": {
+            "types": "./dist/node.d.ts",
+            "import": "./src/node.ts",
+            "default": "./src/node.ts"
+        }
+    },
+    "license": "MIT",
+    "scripts": {
+        "build": "tsc",
+        "clean": "git clean -xdf .cache .turbo dist node_modules",
+        "dev": "tsc",
+        "format": "prettier --check . --ignore-path ../../.gitignore",
+        "lint": "eslint",
+        "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+    },
+    "dependencies": {
+        "@testing-library/jest-dom": "^6.8.0",
+        "@testing-library/react": "^16.3.0",
+        "@testing-library/user-event": "^14.6.1",
+        "@vitejs/plugin-react-swc": "^4.0.1",
+        "@vitest/coverage-v8": "^3.2.4",
+        "jsdom": "^26.1.0",
+        "tsx": "^4.20.5",
+        "vitest": "^3.2.4"
+    },
+    "devDependencies": {
+        "@acme/eslint-config": "workspace:*",
+        "@acme/prettier-config": "workspace:*",
+        "@acme/tsconfig": "workspace:*",
+        "eslint": "catalog:",
+        "prettier": "catalog:",
+        "typescript": "catalog:"
+    },
+    "prettier": "@acme/prettier"
+}
