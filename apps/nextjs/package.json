@@ -11,6 +11,7 @@
     "lint": "eslint",
     "start": "pnpm with-env next start",
     "typecheck": "tsc --noEmit",
+    "test": "NODE_OPTIONS='--import tsx/esm' vitest run",
     "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
@@ -35,6 +36,7 @@
     "@acme/prettier-config": "workspace:*",
     "@acme/tailwind-config": "workspace:*",
     "@acme/tsconfig": "workspace:*",
+    "@acme/vitest": "workspace:*",
     "@types/node": "^22.15.29",
     "@types/react": "catalog:react19",
     "@types/react-dom": "catalog:react19",
@@ -43,6 +45,7 @@
     "jiti": "^2.4.2",
     "prettier": "catalog:",
     "tailwindcss": "catalog:",
+    "tsx": "^4.20.5",
     "typescript": "catalog:"
   },
   "prettier": "@acme/prettier-config"
