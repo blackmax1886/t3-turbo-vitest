@@ -31,6 +31,8 @@
     "@acme/prettier-config": "workspace:*",
     "@acme/tsconfig": "workspace:*",
     "eslint": "catalog:",
+    "msw": "^2.10.5",
+    "msw-trpc": "^2.0.1",
     "prettier": "catalog:",
     "typescript": "catalog:"
   },
