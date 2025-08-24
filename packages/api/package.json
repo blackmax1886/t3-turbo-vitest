@@ -7,6 +7,10 @@
     ".": {
       "types": "./dist/index.d.ts",
       "default": "./src/index.ts"
+    },
+    "./msw-trpc": {
+      "types": "./dist/msw/trpc.d.ts",
+      "default": "./src/msw/trpc.ts"
     }
   },
   "license": "MIT",
