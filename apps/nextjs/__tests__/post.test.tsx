@@ -81,6 +81,7 @@ test("CreatePostForm should submit and create a post", async () => {
         updatedAt: now,
       };
       posts.push(newPost);
+      return { command: "INSERT", rowCount: 1, oid: 0, fields: [], rows: [] };
     }),
   );
 
