@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { QueryClientProvider } from "@tanstack/react-query";
+import { render } from "@testing-library/react";
 import { createTRPCClient, httpLink } from "@trpc/client";
 import SuperJSON from "superjson";
 
 import type { AppRouter } from "@acme/api";
-import { render } from "@acme/vitest";
 
 import { createQueryClient } from "~/trpc/query-client";
 import { TRPCProvider } from "~/trpc/react";

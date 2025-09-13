@@ -1,8 +1,9 @@
 import { Suspense } from "react";
+import userEvent from "@testing-library/user-event";
+import { afterAll, beforeAll, expect, test } from "vitest";
 
 import type { RouterOutputs } from "@acme/api";
 import { setupServer, trpcMsw } from "@acme/api/msw-trpc";
-import { afterAll, beforeAll, expect, test, userEvent } from "@acme/vitest";
 
 import {
   CreatePostForm,
