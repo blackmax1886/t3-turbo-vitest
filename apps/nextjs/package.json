@@ -37,9 +37,9 @@
     "@acme/tailwind-config": "workspace:*",
     "@acme/tsconfig": "workspace:*",
     "@acme/vitest": "workspace:*",
-    "@testing-library/jest-dom": "^6.8.0",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^14.6.1",
+    "@testing-library/jest-dom": "catalog:vitest",
+    "@testing-library/react": "catalog:vitest",
+    "@testing-library/user-event": "catalog:vitest",
     "@types/node": "^22.15.29",
     "@types/react": "catalog:react19",
     "@types/react-dom": "catalog:react19",
@@ -50,7 +50,7 @@
     "tailwindcss": "catalog:",
     "tsx": "^4.20.5",
     "typescript": "catalog:",
-    "vitest": "^3.2.4"
+    "vitest": "catalog:vitest"
   },
   "prettier": "@acme/prettier-config"
 }
